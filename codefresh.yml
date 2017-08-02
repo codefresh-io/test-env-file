@@ -1,0 +1,9 @@
+
+version: '1.0'
+steps:
+
+  step_name:
+    title: Step Title
+    type: launch-composition
+    composition: './docker-compose.yml'
+    environment_name: 'environment name'
