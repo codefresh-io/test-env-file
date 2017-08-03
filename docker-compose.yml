@@ -4,3 +4,5 @@ services:
     image: codefresh/cf-api:master
     env_file: ./env-file
     command: sh -c 'while true; do echo hello; sleep 2; done'
+    ports:
+      - 3000
