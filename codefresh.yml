@@ -2,8 +2,18 @@
 version: '1.0'
 steps:
 
-  step_name:
-    title: Step Title
+  unit_composition:
+    title: Unit test composition
+    type: composition
+    composition: './docker-compose.yml'
+    environment_name: 'environment name'
+    composition_candidates:
+      test:
+        image: alpine:latest
+        command: echo hello
+
+  launch_composition:
+    title: Launch composition
     type: launch-composition
     composition: './docker-compose.yml'
     environment_name: 'environment name'
