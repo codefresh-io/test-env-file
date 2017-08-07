@@ -1,6 +1,18 @@
 version: '3'
 services:
-  mongo:
-    image: $KEY:latest
+  mongo1:
+    image: node:7
+    env_file: ./env-file
+    command: sh -c 'while true; do echo hello; sleep 2; done'
+  mongo2:
+    image: node:6
+    env_file: ./env-file
+    command: sh -c 'while true; do echo hello; sleep 2; done'
+  mongo3:
+    image: node:5
+    env_file: ./env-file
+    command: sh -c 'while true; do echo hello; sleep 2; done'
+  mongo4:
+    image: node:4
     env_file: ./env-file
     command: sh -c 'while true; do echo hello; sleep 2; done'
