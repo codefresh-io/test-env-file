@@ -5,6 +5,7 @@ steps:
   unit_composition:
     title: Unit test composition
     type: composition
+    working_directory: ./test
     composition: './docker-compose.yml'
     environment_name: 'environment name'
     composition_candidates:
@@ -15,5 +16,6 @@ steps:
   launch_composition:
     title: Launch composition
     type: launch-composition
+    working_directory: ./test
     composition: './docker-compose.yml'
     environment_name: 'environment name'
