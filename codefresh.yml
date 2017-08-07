@@ -2,21 +2,12 @@
 version: '1.0'
 steps:
 
-  unit_composition:
-    title: Unit test composition
-    type: composition
-    serial_pull: true
-    working_directory: ./test
-    composition: './docker-compose.yml'
-    environment_name: 'environment name'
-    composition_candidates:
-      test:
-        image: alpine:latest
-        command: echo hello
+
 
   launch_composition:
     title: Launch composition
     type: launch-composition
+    serial_pull: true
     working_directory: ./test
     composition: './docker-compose.yml'
     environment_name: 'environment name'
