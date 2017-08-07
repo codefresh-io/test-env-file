@@ -8,6 +8,8 @@ steps:
     working_directory: ./test
     composition: './docker-compose.yml'
     environment_name: 'environment name'
+    composition_variables:
+      - KEY: 'alpine'
     composition_candidates:
       test:
         image: alpine:latest
