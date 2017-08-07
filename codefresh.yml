@@ -19,5 +19,7 @@ steps:
     title: Launch composition
     type: launch-composition
     working_directory: ./test
+    composition_variables:
+      - KEY=alpine
     composition: './docker-compose.yml'
     environment_name: 'environment name'
