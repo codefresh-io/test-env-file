@@ -8,7 +8,7 @@ steps:
     composition_variables:
       - KEY=alpine
     working_directory: ./test
-    composition: './docker-compose.yml'
+    composition: './docker-composee.yml'
     environment_name: 'environment name'
     composition_candidates:
       test:
