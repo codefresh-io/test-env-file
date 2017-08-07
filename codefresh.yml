@@ -9,7 +9,7 @@ steps:
     composition: './docker-compose.yml'
     environment_name: 'environment name'
     composition_variables:
-      - KEY=alpine
+      - KEYY=alpine
     composition_candidates:
       test:
         image: alpine:latest
@@ -20,6 +20,6 @@ steps:
     type: launch-composition
     working_directory: ./test
     composition_variables:
-      - KEY=alpine
+      - KEYY=alpine
     composition: './docker-compose.yml'
     environment_name: 'environment name'
