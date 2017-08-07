@@ -9,7 +9,7 @@ steps:
     composition: './docker-compose.yml'
     environment_name: 'environment name'
     composition_variables:
-      - KEY: 'alpine'
+      - KEY=alpine
     composition_candidates:
       test:
         image: alpine:latest
