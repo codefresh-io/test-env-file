@@ -5,6 +5,8 @@ steps:
   unit_composition:
     title: Unit test composition
     type: composition
+    composition_variables:
+      - KEY=alpine
     working_directory: ./test
     composition: './docker-compose.yml'
     environment_name: 'environment name'
@@ -17,5 +19,5 @@ steps:
     title: Launch composition
     type: launch-composition
     working_directory: ./test
-    composition: './docker-composee.yml'
+    composition: './docker-compose.yml'
     environment_name: 'environment name'
