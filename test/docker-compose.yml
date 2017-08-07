@@ -1,6 +1,6 @@
 version: '3'
 services:
   mongo:
-    image: codefresh/cf-api:master
+    image: $KEY:latest
     env_file: ./env-file
     command: sh -c 'while true; do echo hello; sleep 2; done'
