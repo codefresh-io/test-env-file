@@ -2,12 +2,17 @@
 version: '1.0'
 steps:
 
+  generate-tag: 
+    image: node:latest 
+    working-directory: ${{main_clone}} 
+    commands: 
+      - cf_export TEST1=itai
 
-
-  launch_composition:
-    title: Launch composition
-    type: launch-composition
-    serial_pull: true
-    working_directory: ./test
-    composition: './docker-compose.yml'
-    environment_name: 'environment name'
+  alpine-freestyle-step: 
+      image: alpine 
+      commands: 
+        - echo test ${TEST1} 
+      #when: 
+       # condition: 
+        #  all: 
+         #   promoted: "'${TEST1}' == '12345678910'" 
