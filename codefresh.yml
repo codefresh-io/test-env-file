@@ -12,7 +12,7 @@ steps:
       image: alpine 
       commands: 
         - echo test ${TEST1} 
-      #when: 
-       # condition: 
-        #  all: 
-         #   promoted: "'${TEST1}' == '12345678910'" 
+      when: 
+        condition: 
+          all: 
+            promoted: "'${TEST1}' == 'itai'" 
