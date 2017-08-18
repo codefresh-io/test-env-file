@@ -2,12 +2,8 @@
 version: '1.0'
 steps:
 
-
-
-  launch_composition:
-    title: Launch composition
-    type: launch-composition
-    serial_pull: true
-    working_directory: ./test
-    composition: './docker-compose.yml'
-    environment_name: 'environment name'
+  free_style:
+    title: 'cool step'
+    image: alpine:latest
+    commands:
+      - echo 'hello boss'
