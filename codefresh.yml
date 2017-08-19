@@ -7,3 +7,11 @@ steps:
     image: alpine:latest
     commands:
       - echo 'hello boss'
+      
+  free_style:
+    title: 'cool step'
+    image: alpine:latest
+    commands:
+      - echo 'going to sleep for 20 seconds'
+      - sleep 20
+      - echo 'woke up :)'
