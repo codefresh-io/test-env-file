@@ -8,8 +8,8 @@ steps:
     commands:
       - echo 'hello boss'
       
-  free_style:
-    title: 'cool step'
+  free_stylee:
+    title: 'cool step 2'
     image: alpine:latest
     commands:
       - echo 'going to sleep for 20 seconds'
