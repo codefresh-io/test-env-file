@@ -9,5 +9,4 @@ steps:
     type: launch-composition
     serial_pull: true
     working_directory: ./test
-    composition: './docker-compose.yml'
-    environment_name: 'environment name'
+    composition: 'test'
