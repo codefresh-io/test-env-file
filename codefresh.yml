@@ -7,6 +7,4 @@ steps:
   launch_composition:
     title: Launch composition
     type: launch-composition
-    serial_pull: true
-    working_directory: ./test
-    composition: 'test'
+    composition: 'bami'
