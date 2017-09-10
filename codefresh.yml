@@ -6,11 +6,7 @@ steps:
 
   itai_test:
     title: Launch composition
-    image: alpine
-    commands: echo hello
-    
-    
-  itai-ttest:
-    title: Launch composition
-    image: alpine
-    commands: echo hello
+    image: alpine:latest
+    commands:
+      - echo hello
+   
