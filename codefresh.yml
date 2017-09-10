@@ -4,7 +4,7 @@ steps:
 
 
 
-  itai-test:
+  itai_test:
     title: Launch composition
     image: alpine:latest
     commands: 
