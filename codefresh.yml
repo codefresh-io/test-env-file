@@ -4,7 +4,13 @@ steps:
 
 
 
-  launch_composition:
+  itai_test:
     title: Launch composition
-    type: launch-composition
-    composition: 'bami'
+    image: alpine
+    command: echo hello
+    
+    
+  itai-ttest:
+    title: Launch composition
+    image: alpine
+    command: echo hello
