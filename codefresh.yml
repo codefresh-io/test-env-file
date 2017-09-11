@@ -6,7 +6,7 @@ steps:
 
   itai_test:
     title: Launch composition
-    image: alpine:latest
-    commands: 
-      - echo hello
+    type: launch-composition
+    environment_name: "itai-env"
+    composition: test
    
