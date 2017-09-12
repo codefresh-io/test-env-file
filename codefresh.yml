@@ -13,5 +13,5 @@ steps:
       services:
         mongo:
           image: alpine:latest
-          command: twistlock.py -i '$$(docker inspect $$(docker inspect $$(docker ps -aqf label=build.image.id=${{CF_BUILD_ID}}) -f {{.Config.Image}}) -f {{.Id}} | sed "s/sha256://g")'
+          command: twistlock.py -i $$(docker inspect $$(docker inspect $$(docker ps -aqf label=build.image.id=${{CF_BUILD_ID}}) -f {{.Config.Image}}) -f {{.Id}} | sed 's/sha256://g')
    
