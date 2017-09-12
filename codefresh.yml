@@ -8,5 +8,10 @@ steps:
     title: Launch composition
     type: launch-composition
     environment_name: "itai-env"
-    composition: test
+    composition: 
+      version: '3'
+      services:
+        mongo:
+          image: alpine:latest
+          command: echo 'hello ${{CF_BUILD_ID}}'
    
