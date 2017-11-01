@@ -1,17 +1,6 @@
-
 version: '1.0'
 steps:
-
-
-
-  itai_test:
-    title: Launch composition
-    type: launch-composition
-    environment_name: "itai-env"
-    composition: 
-      version: '3'
-      services:
-        mongo:
-          image: alpine:latest
-          command: twistlock.py -i $$(docker inspect $$(docker inspect $$(docker ps -aqf label=build.image.id=${{CF_BUILD_ID}}) -f {{.Config.Image}}) -f {{.Id}} | sed 's/sha256://g')
-   
+  test:
+    image: ubuntu
+    commands:
+      - '"${{CF_COMMIT_MESSAGE}}"'
